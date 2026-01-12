@@ -1,0 +1,22 @@
+{
+  "name": "Henadzi (Henry) Kirykovich",
+  "tagline": "Software Developer",
+  "elevatorPitch": "Motivated software developer with strong backend focus in C#/.NET and hands-on experience in frontend and mobile development using React and React Native. I build clean, responsive interfaces and connect them with reliable APIs and cloud services. Currently pursuing a Software Development degree at Bellevue College and continuously improving my skills through real-world projects.",
+  "location": "Bellevue, WA",
+  "links": {
+    "github": "https://github.com/HenryKirykovich/",
+    "linkedin": "https://www.linkedin.com/in/henadzi-kirykovich-592846258/"
+  },
+  "projects": [
+    {
+      "title": "WeatherCity App",
+      "description": "React + Firebase + Weather API app with global city search, bookmarks, and geolocation-based weather display.",
+      "url": "https://templix.tech/"
+    },
+    {
+      "title": "Catalaze App",
+      "description": "React Native mobile app using Supabase and AI APIs to categorize cats, upload images, and analyze breeds.",
+      "url": "https://github.com/HenryKirykovich/"
+    }
+  ]
+}
