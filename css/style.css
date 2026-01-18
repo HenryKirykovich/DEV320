@@ -9,22 +9,37 @@ body {
 	background: #f6f7fb;
 }
 
-.page { 
-    display: flex;
-     justify-content: center;
-    padding: 24px;
-     }
-
-.card {
-	display: flex;
-	width: 100%;
-	max-width: 900px;
-	background: #fff;
-	border: 1px solid #ddd;
-	border-radius: 12px;
-	overflow: hidden;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+body {
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	color: #222;
 }
+
+/* Avatar sizing and spacing */
+.avatar {
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+}
+
+@media (min-width: 768px) {
+	.avatar { width: 220px; height: 220px; }
+}
+
+/* Small visual tweaks for right column */
+#name { font-weight:700; }
+#tagline { color: #6c757d; margin-bottom: .75rem; }
+#pitch { margin-bottom: 1rem; }
+
+/* Add extra space under the photo on small screens to avoid overlap */
+@media (max-width: 767.98px) {
+	.row.no-gutters > .col-12.col-md-4 {
+		padding-bottom: 1.5rem;
+	}
+}
+
 
 .left {
 	flex: 0 0 260px;
@@ -74,7 +89,7 @@ body {
 
 /* Responsive: stack columns on narrower screens */
 @media (max-width: 700px) {
-	.card { flex-direction: column; }
+	.profile-card { flex-direction: column; }
 	.left { flex: 0 0 auto; padding: 12px; }
 	.avatar { max-width: 250px; max-height: 250px; width: 100%; height: auto; }
 	.right { padding: 16px; }
